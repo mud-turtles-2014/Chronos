@@ -6,22 +6,27 @@ pink = #E84A5F
 dark = #2A363B
 */
 body{
-  background-color: #FECEA8;
+  background-color: #99B898;
 }
 
 *{
   margin: 0;
 }
 
+label {
+  font-weight: bold;
+  color: #2A363B;
+}
+
 .header {
   text-align: center;
-  background-color: #2A363B;
-  color: #99B898 ;
+  background-color: #FF847C;
+  color: #2A363B ;
   font-size: 2.5em;
 }
 
 .nav_bar {
-  background-color: #99B898;
+  background-color: #FECEA8;
   color: #2A363B;
   font-size: 1.5em;
   text-align: center;
@@ -29,4 +34,10 @@ body{
 
 .nav_bar ul li{
   display: inline;
+}
+
+#capsule_form form {
+  text-align: center;
+  padding-top: 2%;
+  border: 1px;
 }
