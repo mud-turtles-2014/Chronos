@@ -1,0 +1,5 @@
+<div class="user-capsules">
+  <% @capsules.each do |capsule| %>
+      <%= erb :'/partials/_pending', :layout => false, locals:{capsule: capsule} %>
+  <% end %>
+</div>
