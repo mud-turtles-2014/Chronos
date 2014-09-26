@@ -4,7 +4,9 @@ get '/user/:id' do
 end
 
 post '/user/:id/capsule' do
-  if timify(params[:capsule][:next_time])
+  params[:capsule]["next_time"] = timify(params[:capsule][:next_time])
+
+  if params[:capsule]["next_time"] 
     current_user.capsules << Capsule.create(params[:capsule])
     redirect to ("/user/#{current_user.id}/pending")
   else
