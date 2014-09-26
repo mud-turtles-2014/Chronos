@@ -1,5 +1,5 @@
 get '/user/:id' do
-  # @viewable = current_user.capsules.find
+  @viewables = current_user.capsules.where("next_time < ?", Time::now)
   erb :'user'
 end
 

@@ -9,5 +9,7 @@
 <%= erb :'partials/_capsule_form' %>
 
 <div class="viewable-list">
-  
+  <% @viewables.each do |viewable| %>
+    <%= erb :'/partials/_pending', :layout => false, locals:{capsule: viewable} %>
+  <% end %>
 </div>
