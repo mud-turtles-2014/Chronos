@@ -1,0 +1,16 @@
+<h1><%= @user.name %></h1>
+
+	<% @capsules.each do |capsule| %>
+		
+		<p>
+			<%= capsule.title %><br>
+			<%= capsule.url %>
+			<br>
+			<%= capsule.caption %>
+			<br>
+			<%= capsule.next_time %>
+		</p>
+		
+
+	<% end %>
+
