@@ -1,7 +1,9 @@
 $(document).ready(function() {
+  $('#capsule_form').hide();
 
-  $('#btn-upload').click(function() {
-
+  $('#btn-upload a').click(function(event) {
+    event.preventDefault();
+    $('#capsule_form').toggle();
   });
 
 

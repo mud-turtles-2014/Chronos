@@ -11,5 +11,4 @@ post '/user/:id/capsule' do
     session[:errors] = "Invalid Time."
     redirect to ("/user/#{current_user.id}")
   end 
-
 end

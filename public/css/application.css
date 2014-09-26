@@ -36,6 +36,12 @@ label {
   display: inline;
 }
 
+.nav_bar ul li a {
+  display: inline;
+  color: #2A363B;
+  text-decoration: none;
+}
+
 #capsule_form form {
   text-align: center;
   padding-top: 2%;
