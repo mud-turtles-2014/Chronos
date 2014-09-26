@@ -1,5 +1,5 @@
 get '/user/:id' do
-
+  # @viewable = current_user.capsules.find
   erb :'user'
 end
 
