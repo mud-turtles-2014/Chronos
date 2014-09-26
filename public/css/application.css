@@ -1,0 +1,32 @@
+/*  
+green = #99B898 
+peach = #FECEA8
+coral = #FF847C
+pink = #E84A5F
+dark = #2A363B
+*/
+body{
+  background-color: #FECEA8;
+}
+
+*{
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  background-color: #2A363B;
+  color: #99B898 ;
+  font-size: 2.5em;
+}
+
+.nav_bar {
+  background-color: #99B898;
+  color: #2A363B;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.nav_bar ul li{
+  display: inline;
+}
