@@ -13,10 +13,28 @@ body{
   margin: 0;
 }
 
+#capsule_form form {
+  text-align: center;
+  padding-top: 2%;
+  border: 1px;
+}
 label {
   font-weight: bold;
   color: #2A363B;
 }
+
+/*#labels{
+  display: inline-block;
+  text-align: left;
+  float: left; 
+  width:50%;
+}
+
+#fields{
+  text-align: right;
+  float: left;
+  width:50%;
+}*/
 
 .header {
   text-align: center;
@@ -46,10 +64,4 @@ label {
   color: #2A363B;
   text-decoration: none;
   border-bottom: 2px dotted;
-}
-
-#capsule_form form {
-  text-align: center;
-  padding-top: 2%;
-  border: 1px;
 }
