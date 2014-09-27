@@ -1,6 +1,7 @@
-get '/user/:id/pending' do
+get '/user/:id' do
   p "IN THE ROUTE"
-  @capsules = User.find(1).capsules
+  @capsules = User.find(session[:user_id]).capsules
+  p @capsules
   erb :pending
 end
 

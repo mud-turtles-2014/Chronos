@@ -1,5 +1,4 @@
 get "/user/:user_id/capsule/:capsule_id/edit" do
-
   erb :edit
 end
 
