@@ -25,7 +25,6 @@
 <body>
   <header>
     <a href="/">CHRONOS</a>
-  </header>
   <nav>
     <ul>
       <% if session[:user_id] %>
@@ -40,6 +39,7 @@
       <% end %>
     </ul>
   </nav>
+</header>
   <%= yield %>
 </body>
 
