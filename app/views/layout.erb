@@ -27,6 +27,7 @@
       <% if session[:user_id] %>
         <p>Hello, user.</p>
         <a href="/user/<%= session[:user_id] %>/profile"><li>My Profile</li></a>
+         <a href="/user/<%= session[:user_id] %>/capsule/new"><li>Create Capsule</li></a>
         <a href="/user/<%= session[:user_id] %>"><li>My Capsules</li></a>
         <a href="/logout"><li>Logout</li></a>
       <% else %>
