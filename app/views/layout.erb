@@ -25,8 +25,10 @@
   <nav>
     <ul>
       <% if session[:user_id] %>
+        <p>Hello, user.</p>
+        <a href="/user/<%= session[:user_id] %>/profile"><li>My Profile</li></a>
+        <a href="/user/<%= session[:user_id] %>"><li>My Capsules</li></a>
         <a href="/logout"><li>Logout</li></a>
-        <a href="/user/<%= session[:user_id] %>"><li>My Profile</li></a>
       <% else %>
         <a href="/session"><li>Sign In</li></a>
         <a href="/user"><li>New Account</li></a>

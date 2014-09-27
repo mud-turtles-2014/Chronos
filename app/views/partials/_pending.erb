@@ -1,11 +1,12 @@
 <div class="capsule" style="border: top dotted black 3px;">
-  <%=capsule.title%><br><br>
-  <%=capsule.caption%><br><br>
-  <%=capsule.url%><br><br>
-  <%=capsule.next_time%><br><br>
-  <%=capsule.created_at%><br><br>
+  Title: <%=capsule.title%><br><br>
+  Caption: <%=capsule.caption%><br><br>
+  Photo URL: <%=capsule.url%><br><br>
+  Time photo will be visible: <%=capsule.next_time%><br><br>
+  Time photo was created: <%=capsule.created_at%><br><br>
   <%if capsule.next_time < Time::now%>
-    <input name="view-button" type="button" value="View">
+    <!-- <input name="view-button" type="button" value="View"> -->
+    <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>">View this Capsule</a>
   <%else%>
     <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>/edit">Edit this Capsule</a>
   <%end%>

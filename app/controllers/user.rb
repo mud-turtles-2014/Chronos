@@ -1,4 +1,9 @@
-enable "sessions"
+enable :sessions
+
+before '/:username/landing_page' do
+  @user = User.find_by(username: params[:username])
+  session[:user_id] == @user.id ? @valid = true : @valid = false
+end
 
 get "/" do
   erb :index
@@ -6,7 +11,7 @@ end
 
 get '/user/:id' do
   @viewables = current_user.capsules.where("next_time < ?", Time::now)
-  erb :'user'
+  erb :user
 end
 
 post '/user/:id/capsule' do
@@ -47,6 +52,26 @@ post '/session' do
     redirect "/session"
   else
     session[:user_id] = user.id
-    redirect "/user/#{user.id}"
+    # redirect "/user/#{user.id}"
+    redirect "/user/#{current_user.id}"
   end
 end
+
+get "/user/:user_id" do
+  erb :'/users/landing_page'
+end
+
+delete '/session' do
+  session.clear
+  erb :index
+end
+
+get '/logout' do
+  session.clear
+  redirect '/'
+end
+
+get '/user/:user_id/profile' do
+  erb :'/users/my_profile'
+end
+
