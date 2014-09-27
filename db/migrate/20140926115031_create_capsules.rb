@@ -4,7 +4,7 @@ class CreateCapsules < ActiveRecord::Migration
     create_table :capsules do |t|
       t.references :user
       t.string :title, :caption, :url
-      t.datetime :next_time, default: Chronic.parse('tomorrow')
+      t.datetime :next_time, default: Time.now
 
       t.timestamps
     end
