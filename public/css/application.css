@@ -108,4 +108,9 @@ li {
 
 #homepage {
   font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+#my-profile {
+  text-align: center;
 }
