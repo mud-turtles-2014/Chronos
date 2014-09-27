@@ -15,11 +15,24 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Chronos</title>
 </head>
 
 <body>
-  <div class="header">CHRONOS</div>
+  <header>
+    <a href="/">CHRONOS</a>
+  </header>
+  <nav>
+    <ul>
+      <% if session[:user_id] %>
+        <a href="/logout"><li>Logout</li></a>
+        <a href="/user/<%= session[:user_id] %>"><li>My Profile</li></a>
+      <% else %>
+        <a href="/session"><li>Sign In</li></a>
+        <a href="/user"><li>New Account</li></a>
+      <% end %>
+    </ul>
+  </nav>
   <%= yield %>
 </body>
 

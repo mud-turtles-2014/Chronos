@@ -7,7 +7,6 @@ class CreateCapsules < ActiveRecord::Migration
       t.datetime :next_time
 
       t.timestamps
-
     end
   end
 end

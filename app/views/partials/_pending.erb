@@ -1,5 +1,4 @@
-
-<div class="capsule" style="border: top dotted black 3px ">
+<div class="capsule" style="border: top dotted black 3px;">
   <%=capsule.title%><br><br>
   <%=capsule.caption%><br><br>
   <%=capsule.url%><br><br>
@@ -8,7 +7,7 @@
   <%if capsule.next_time < Time::now%>
     <input name="view-button" type="button" value="View">
   <%else%>
-    <input name="edit-button" type="button" value="Edit">
+    <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>/edit">Edit this Capsule</a>
   <%end%>
 
 </div>

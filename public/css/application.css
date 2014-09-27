@@ -1,5 +1,5 @@
-/*  
-green = #99B898 
+/*
+green = #99B898
 peach = #FECEA8
 coral = #FF847C
 pink = #E84A5F
@@ -26,7 +26,7 @@ label {
 /*#labels{
   display: inline-block;
   text-align: left;
-  float: left; 
+  float: left;
   width:50%;
 }
 
@@ -36,7 +36,7 @@ label {
   width:50%;
 }*/
 
-.header {
+header {
   text-align: center;
   background-color: #FF847C;
   font-weight: bold;
