@@ -1,5 +1,5 @@
 <div class="capsule" style="border: top dotted black 3px;">
-  <% @capsules.each do |capsule| %>
+    <p>-----------------------------------------------------------------------------------</p>
     Title: <%=capsule.title%><br><br>
     Caption: <%=capsule.caption%><br><br>
     Photo URL: <%=capsule.url%><br><br>
@@ -8,8 +8,10 @@
      <%if capsule.next_time < Time::now%>
       <!-- <input name="view-button" type="button" value="View"> -->
         <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>">View this Capsule</a>
+        <br>
       <%else%>
         <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>/edit">Edit this Capsule</a>
+        <br>
     <%end%>
-  <%end%>
+
 </div>
