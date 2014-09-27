@@ -1,32 +1,67 @@
-/*  
-green = #99B898 
+/*
+green = #99B898
 peach = #FECEA8
 coral = #FF847C
 pink = #E84A5F
 dark = #2A363B
 */
 body{
-  background-color: #FECEA8;
+  background-color: #99B898;
 }
 
 *{
   margin: 0;
 }
 
-.header {
+#capsule_form form {
   text-align: center;
-  background-color: #2A363B;
-  color: #99B898 ;
+  padding-top: 2%;
+  border: 1px;
+}
+label {
+  font-weight: bold;
+  color: #2A363B;
+}
+
+/*#labels{
+  display: inline-block;
+  text-align: left;
+  float: left;
+  width:50%;
+}
+
+#fields{
+  text-align: right;
+  float: left;
+  width:50%;
+}*/
+
+header {
+  text-align: center;
+  background-color: #FF847C;
+  font-weight: bold;
+  color: #2A363B ;
   font-size: 2.5em;
 }
 
 .nav_bar {
-  background-color: #99B898;
+  background-color: #FECEA8;
   color: #2A363B;
   font-size: 1.5em;
   text-align: center;
+  height: 10%;
 }
 
 .nav_bar ul li{
   display: inline;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: center;
+}
+
+.nav_bar ul li a {
+  display: inline;
+  color: #2A363B;
+  text-decoration: none;
+  border-bottom: 2px dotted;
 }

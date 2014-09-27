@@ -1,0 +1,9 @@
+<div class="user-capsules">
+  <% if @capsules %>
+    <% @capsules.each do |capsule| %>
+        <%= erb :'/partials/_pending', :layout => false, locals:{capsule: capsule} %>
+    <% end %>
+  <%else%>
+    <p>You have no capsules yet.</p>
+  <%end%>
+</div>
