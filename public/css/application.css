@@ -6,6 +6,19 @@ pink = #E84A5F
 dark = #2A363B
 */
 body{
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-size: 30px;*/
+  background-color:#F0F8FF
+  font-family: 'Arvo', serif;
+}
+
+.capsule {
+  font-family: 'Arvo', serif;
+
+}
+
+p {
+  font-family: 'Arvo', serif;
 }
 
 *{
@@ -64,6 +77,27 @@ header {
   color: #2A363B;
   text-decoration: none;
   border-bottom: 2px dotted;
+}
+
+header a:link, header a:visited, header a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.button a:link, a:visited, a:active {
+  color: #000FFF;
+  text-decoration: none;
+}
+
+.button a:hover {
+  color: #606060;
+  text-decoration: none;
+
 }
 
 li {
