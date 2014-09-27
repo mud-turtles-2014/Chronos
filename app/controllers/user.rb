@@ -5,8 +5,8 @@ get "/" do
 end
 
 get '/user/:id' do
-  # @viewable = current_user.capsules.find
-  erb :user
+  @viewables = current_user.capsules.where("next_time < ?", Time::now)
+  erb :'user'
 end
 
 post '/user/:id/capsule' do

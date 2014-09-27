@@ -4,7 +4,7 @@
   <%=capsule.url%><br><br>
   <%=capsule.next_time%><br><br>
   <%=capsule.created_at%><br><br>
-  <%if capsule.next_time > Time::now%>
+  <%if capsule.next_time < Time::now%>
     <input name="view-button" type="button" value="View">
   <%else%>
     <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>/edit">Edit this Capsule</a>
