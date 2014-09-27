@@ -6,8 +6,6 @@ pink = #E84A5F
 dark = #2A363B
 */
 body{
-  /*font-family: 'Amatic SC', cursive;*/
-  /*font-size: 30px;*/
   background-color:#F0F8FF
   font-family: 'Arvo', serif;
 }
@@ -109,8 +107,27 @@ li {
 #homepage {
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin-top: 20%;
 }
 
 #my-profile {
   text-align: center;
+  margin-top: 20%;
+}
+
+form {
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  width: 300px;
+}
+
+.page-header {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.user-capsules {
+  margin-left:30%;
 }
