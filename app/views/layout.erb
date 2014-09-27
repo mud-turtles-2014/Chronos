@@ -15,18 +15,25 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
+<!--fonts below-->
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC|Coming+Soon' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <!-- fonts above -->
+
   <title>Chronos</title>
+  <!--chrome tab icon -->
+  <link rel="shortcut icon" href="http://www.favicongenerator.com/favicon2/hourglass%20(1)-20140927-favicon.ico">
 </head>
 
 <body>
   <header>
     <a href="/">CHRONOS</a>
-  </header>
   <nav>
     <ul>
       <% if session[:user_id] %>
-        <p>Hello, user.</p>
+        <!-- <p>Hello, user.</p> -->
         <a href="/user/<%= session[:user_id] %>/profile"><li>My Profile</li></a>
+         <a href="/user/<%= session[:user_id] %>/capsule/new"><li>Create Capsule</li></a>
         <a href="/user/<%= session[:user_id] %>"><li>My Capsules</li></a>
         <a href="/logout"><li>Logout</li></a>
       <% else %>
@@ -35,6 +42,7 @@
       <% end %>
     </ul>
   </nav>
+</header>
   <%= yield %>
 </body>
 

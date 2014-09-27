@@ -1,5 +1,5 @@
 get '/user/:id' do
-  p "IN THE ROUTE"
+  Time.zone = "EST"
   @capsules = User.find(session[:user_id]).capsules
   p @capsules
   erb :pending

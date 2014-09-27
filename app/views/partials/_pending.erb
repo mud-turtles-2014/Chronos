@@ -1,17 +1,19 @@
+<% Time.zone = "EST" %>
 <div class="capsule" style="border: top dotted black 3px;">
-    <p>-----------------------------------------------------------------------------------</p>
+    <p>________________________________________________________________________</p>
     Title: <%=capsule.title%><br><br>
-    Caption: <%=capsule.caption%><br><br>
-    Photo URL: <%=capsule.url%><br><br>
     Time photo will be visible: <%=capsule.next_time%><br><br>
-    Time photo was created: <%=capsule.created_at%><br><br>
      <%if capsule.next_time < Time::now%>
       <!-- <input name="view-button" type="button" value="View"> -->
-        <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>">View this Capsule</a>
-        <br>
+        <div class="button">
+          <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>">View this Capsule</a>
+          <br>
+        </div>
       <%else%>
+      <div class="button">
         <a href="/user/<%=capsule.user_id%>/capsule/<%=capsule.id%>/edit">Edit this Capsule</a>
-        <br>
+          <br>
+        </div>
     <%end%>
 
 </div>
