@@ -18,6 +18,10 @@ gem 'shotgun'
 gem 'bcrypt'
 gem'chronic'
 
+group :production do
+  gem 'unicorn'
+end
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
