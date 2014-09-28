@@ -1,8 +1,9 @@
 <h1>Edit Your Post</h1>
 
 <form action="/user/<%=@user.id%>/capsule/<%=@capsule.id%>/edit" method="post">
-  <input type="text" name="<%=capsule[:next_time]%>" value="<%=Chronic.parse('tomorrow')%>" style="width: 300px"><br>
+   <input type="hidden" name="_method" value="put">
+  <input type="text" name="capsule[next_time]" value="<%=Chronic.parse('tomorrow')%>" style="width: 300px"><br>
   <input type="submit" value="Submit">
-  <input type="hidden" name="_method" value="put">
+
 </form>
 

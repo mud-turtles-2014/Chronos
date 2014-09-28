@@ -6,9 +6,8 @@ end
 
 put "/user/:user_id/capsule/:capsule_id/edit" do
   @user = User.find(session[:user_id])
-  # @user.capsules.create(params[:capsule])
-  @capsule = Capsule.find(params[:capsule_id])
-  Capsule.update(capsule[:user_id], params[:next_time])
-  # @user.capsules.update(params[:capsule])
-  redirect "/user/#{@user.id}"
+
+  Capsule.update(params[:capsule_id], params[:capsule])#need to make it params[capsule_id] bc that's what's in the url
+
+  redirect "/user/#{@user.id}" #what is in redirect, needs to be up at the top of put (@user)
 end
