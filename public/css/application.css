@@ -119,6 +119,7 @@ form {
   font-family: 'Arvo', serif;
   font-size: 20px;
   width: 300px;
+  margin-left:42%;
 }
 
 .page-header {
@@ -129,5 +130,5 @@ form {
 }
 
 .user-capsules {
-  margin-left:30%;
+  margin-left:40%;
 }
